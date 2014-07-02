@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VWViewController : UIViewController
+@interface VWViewController : UIViewController <UITextViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+- (IBAction)processDateButtonPressed:(UIButton *)sender;
 
 @end
